@@ -1,0 +1,41 @@
+{
+  "display": {
+    "title": {
+      "text": "I need more Power",
+      "color": "gold",
+
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "description": {
+      "text": "Craft the dragon sword",
+      "italic": true,
+      "bold": false,
+      "color": "light_purple",
+      "strikethrough": false
+    },
+    "icon": {
+      "item": "bosswhackers:dragon_whacker"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/end.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "bossbashers:dragon_whacker"
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+    ],
+    "experience": 40
+  }
+}

@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "bosswhackers",
+	"version": "${version}",
+	"name": "CLAKAH",
+	"description": "Adds weapons and more - AIystra",
+	"authors": [
+		"BoyPika"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/boss-bashers",
+		"issues": "https://github.com/BoyPika/boss-whackers/issues",
+		"email": "boypika85@gmail.com"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/bosswhackers/textures/item/wither_whacker.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.boypika.BossWhackers"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": ">=1.19.3",
+		"java": ">=17",
+		"fabric": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"update_checker": true
+		}
+	}
+}

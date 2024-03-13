@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "nGn",
+    "RBR",
+    "PGP"
+  ],
+  "key": {
+    "n": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "R": {
+      "item": "minecraft:raw_gold_block"
+    },
+    "B": {
+      "item": "bosswhackers:guardian_sushi"
+    },
+    "P": {
+      "item": "minecraft:prismarine_shard"
+    }
+  },
+  "result": {
+    "item": "bosswhackers:guardian_whacker_handle",
+    "count": 1
+  }
+}

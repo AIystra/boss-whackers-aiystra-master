@@ -1,0 +1,75 @@
+plugins {
+	id 'fabric-loom' version '1.3-SNAPSHOT'
+	id 'maven-publish'
+	id "com.modrinth.minotaur" version "2.+"
+	id("co.uzzu.dotenv.gradle") version "2.0.0"
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+	archivesName = project.archives_base_name
+}
+
+repositories {
+	maven{
+		name = "JitPack"
+		url = "https://jitpack.io"
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${project.minecraft_version}"
+	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modImplementation include('com.github.BoyPika:MonkeyConfig538-master:ca245421ad')
+}
+
+processResources {
+	inputs.property "version", project.version
+
+	filesMatching("fabric.mod.json") {
+		expand "version": project.version
+	}
+}
+
+tasks.withType(JavaCompile).configureEach {
+	it.options.release = 17
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+}
+
+jar {
+	from("LICENSE") {
+		rename { "${it}_${project.archivesBaseName}"}
+	}
+}
+
+// configure the maven publication
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			from components.java
+		}
+	}
+}
+import com.modrinth.minotaur.dependencies.ModDependency
+
+modrinth {
+ 	//token = env.fetch("MODRINTH_TOKEN")
+	projectId = 'HQNCq9HG'
+	versionNumber = "${project.version}"
+	versionName = "Boss Whackers ${project.version}"
+	uploadFile = remapJar
+	gameVersions = ['1.19.3', '1.19.4', '1.20', '1.20.1', '1.20.2']
+	loaders = ['fabric', 'quilt']
+	dependencies = [
+			new ModDependency('P7dR8mSH', 'required')
+	]
+}

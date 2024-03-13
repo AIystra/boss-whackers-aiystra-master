@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "NBN",
+    "QYQ"
+  ],
+  "key": {
+    "#": {
+      "item": "bosswhackers:dragon_cell"
+    },
+    "N": {
+      "item": "minecraft:netherite_block"
+    },
+    "B": {
+      "item": "bosswhackers:guardian_whacker"
+    },
+    "Q": {
+      "item": "minecraft:nether_star"
+    },
+    "Y": {
+      "item": "bosswhackers:dragon_whacker_handle"
+    }
+  },
+  "result": {
+    "item": "bosswhackers:dragon_whacker",
+    "count": 1
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "display": {
+    "title": {
+      "text": "RRRrrrr !!!",
+      "color": "gold",
+
+      "italic": false,
+      "underlined": false,
+      "strikethrough": false,
+      "obfuscated": false
+    },
+    "description": {
+      "text": "Craft the Warden sword",
+      "italic": true,
+      "bold": false,
+      "color": "light_purple",
+      "strikethrough": false
+    },
+    "icon": {
+      "item": "bosswhackers:warden_whacker"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "bossbashers:warden_whacker"
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+    ],
+    "experience": 40
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mod_advancement": {
+    "category": "master",
+    "sounds" : [
+      {
+        "name" : "bosswhackers:power",
+        "stream" : true
+      }
+    ]
+  }
+}

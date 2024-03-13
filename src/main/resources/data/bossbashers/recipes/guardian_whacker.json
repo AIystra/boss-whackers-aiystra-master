@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "NAN",
+    "YBY"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "N": {
+      "item": "minecraft:netherite_block"
+    },
+    "A": {
+      "item": "minecraft:netherite_sword"
+    },
+    "Y": {
+      "item": "minecraft:nether_star"
+    },
+    "B": {
+      "item": "bosswhackers:guardian_whacker_handle"
+    }
+  },
+  "result": {
+    "item": "bosswhackers:guardian_whacker",
+    "count": 1
+  }
+}
